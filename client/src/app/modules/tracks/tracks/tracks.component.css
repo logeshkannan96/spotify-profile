@@ -1,0 +1,107 @@
+.container {
+    color: white;
+    margin-top: 20px;
+}
+
+header {
+    margin-top:20px
+}
+
+.header {
+    font-family: "Circular Std";
+    font-size: 14px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.tracks-title {
+    text-decoration: underline;
+    font-family: "Circular Std";
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header > div {
+    display: flex;
+}
+
+button {
+    font-family: "Circular Std";
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(189, 189, 189);
+    font-size: 18px;
+    font-weight: 500;
+    outline: 0;
+    border: 0;
+}
+
+button:hover span
+,button > span:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.isClicked {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.tracks {
+    margin-bottom: 10px;
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+}
+
+.tracks:hover,
+.tracks a:hover,
+.tracks:hover .track-name{
+    text-decoration: none;
+    color: #68d761;
+    cursor: pointer;
+    background-color: rgb(49, 49, 49);
+    font-weight: 400;
+}
+
+.tracks-inner {
+    display: flex;
+    align-items: center;
+}
+
+.track-details {
+    display: inline-block;
+}
+
+.track-details > p {
+    margin: 0px !important;
+}
+
+.track-image {
+    clip-path: circle(24px at center);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.track-name {
+    font-weight: 300;
+    color: white;
+    font-size: 18px;
+}
+
+.additional-details {
+    font-weight: initial;
+    font-size: 14px;
+    color: rgb(144, 144, 144);
+}
+
+.duration {
+    font-size: 14px;
+    color: rgb(144, 144, 144);
+}

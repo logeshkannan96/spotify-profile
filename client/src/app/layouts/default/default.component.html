@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top align-items-center">
+    <a class="navbar-brand">
+        <div class="d-flex align-items-center">
+            <img src="../../../assets/images/favicons/ms-icon-70x70.png" height="50" alt="">
+            <span class="brand-name">Spotify Profile</span>
+        </div>
+    </a>
+    <div class="navbar-nav ml-auto">
+        <div class="text-center mr-3 ml-3 my-auto">
+            <a class="nav-item nav-link" routerLink="/spotify/profile" routerLinkActive="isClicked">
+                <mat-icon>person</mat-icon>
+                <p>Profile</p>
+            </a>
+        </div>
+        <div class="text-center mr-3 ml-3 my-auto">
+            <a class="nav-item nav-link" routerLink="/spotify/artists" routerLinkActive="isClicked">
+                <mat-icon>recent_actors</mat-icon>
+                <p>Artists</p>
+            </a>
+        </div>
+        <div class="text-center mr-3 ml-3 my-auto">
+            <a class="nav-item nav-link" routerLink="/spotify/tracks" routerLinkActive="isClicked">
+                <mat-icon>album</mat-icon>
+                <p>Tracks</p>
+            </a>
+        </div>
+        <div class="text-center mr-3 ml-3 my-auto">
+            <a class="nav-item nav-link" routerLink="/spotify/recent" routerLinkActive="isClicked">
+                <mat-icon>queue_next_play</mat-icon>
+                <p>Recent</p>
+            </a>
+        </div>
+        <div class="text-center mr-3 ml-3 my-auto">
+            <a class="nav-item nav-link" routerLink="/spotify/playlists" routerLinkActive="isClicked">
+                <mat-icon>queue_music</mat-icon>
+                <p>Playlists</p>
+            </a>
+        </div>
+        <div class="text-center mr-3 ml-3 my-auto logout-btn">
+            <a class="nav-item nav-link" (click)="logout()">
+                <mat-icon>power_settings_new</mat-icon>
+                <p>Logout</p>
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="loader-container">
+    <router-outlet></router-outlet>
+</div>

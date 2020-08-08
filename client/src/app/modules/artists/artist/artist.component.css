@@ -1,0 +1,105 @@
+@import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
+
+.content-area {
+    margin:auto;
+}
+
+.artist-display {
+    position: fixed;
+    left: 50px;
+}
+
+.artist-avatar {
+    clip-path: circle(160px at center);
+}
+
+.artist-name {
+    font-family:"Circular Spotify Tx T Black";
+    color:white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.follow-btn {
+    border-radius: 20px;
+    padding:10px 20px 10px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #68d761;
+    text-transform: uppercase;
+    color: #68d761;
+    font-size: 14px;
+    font-family:"Circular Spotify Tx T Black";
+    font-weight: 600;
+    outline:0;
+}
+
+.tracks-title {
+    text-decoration: underline;
+    font-family: "Circular Std";
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.tracks-container > tracks {
+    text-decoration: none;
+    color: #68d761 !important;
+    cursor: pointer;
+    background-color: rgb(49, 49, 49);
+    font-weight: 400;
+}
+
+.tracks {
+    margin-top:4px;
+    margin-bottom: 4px;
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+}
+
+.tracks:hover,
+.tracks a:hover,
+.tracks:hover .track-name{
+    text-decoration: none;
+    color: #68d761;
+    cursor: pointer;
+    background-color: rgb(49, 49, 49);
+    font-weight: 400;
+}
+
+.tracks-inner {
+    display: flex;
+    align-items: center;
+}
+
+.track-details {
+    display: inline-block;
+}
+
+.track-details > p {
+    margin: 0px !important;
+}
+
+.track-image {
+    clip-path: circle(24px at center);
+    margin-top: 5px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.track-name {
+    color: white;
+    font-size: 16px;
+}
+
+.additional-details {
+    font-weight: 100;
+    font-size: 12px;
+    color: rgb(144, 144, 144);
+}
+
+.duration {
+    font-size: 14px;
+    color: rgb(144, 144, 144);
+}

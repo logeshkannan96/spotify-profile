@@ -1,0 +1,20 @@
+<div class="container pt-2">
+    <header class="header">
+        <h2 class="playlists-title">Playlists</h2>
+    </header>
+    <div class="custom-container">
+        <div class="playlist-container">
+            <div class="playlist" *ngFor="let playlist of playlists">
+                <a class="card" [routerLink]="['/playlist/'+playlist.id]">
+                    <img class="card-img-top" src="{{playlist.images[0].url}}">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <p>{{playlist.name}}</p>
+                            <p class="tracks-count">{{playlist.tracks.total}} Tracks</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

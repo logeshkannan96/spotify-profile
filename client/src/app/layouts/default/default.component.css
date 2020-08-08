@@ -1,0 +1,47 @@
+.navbar {
+    height: 80px;
+}
+
+a {
+    font-size: 14px;
+}
+
+.navbar-brand{
+    margin-left: 10px;
+}
+
+.mat-icon {
+    font-size: 20px;
+}
+
+.brand-name {
+    margin-left: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.bg-dark{
+    background-color: rgb(4, 3, 6) !important;
+}
+
+.loader-container{
+    padding-top: 72px;
+}
+
+.nav-link > p {
+    margin: 0px;
+}
+
+.nav-link:hover > p, 
+.nav-link:hover > .mat-icon {
+    color: rgb(233, 233, 233) !important;
+}
+
+.logout-btn {
+    cursor: pointer;
+}
+
+.isClicked {
+    color: rgb(233, 233, 233) !important;
+}

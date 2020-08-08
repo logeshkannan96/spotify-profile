@@ -1,0 +1,88 @@
+.custom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    margin-top:20px
+}
+
+.header {
+    font-family: "Circular Std";
+    font-size: 14px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.playlists-title {
+    text-decoration: underline;
+    font-family: "Circular Std";
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header > div {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.playlist-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.playlist {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card {
+    border: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
+
+.card .tracks-count {
+    font-weight: 100;
+    font-size: 12px;
+    color: rgb(228, 228, 228, 0.8);
+}
+
+.card-img-top {
+    border-radius: 8px 8px 8px 8px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.card:hover {
+    color: white;
+    border-radius: 5px;
+    transform: scale(1.05,1.05); /* Standard syntax */
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card:hover .tracks-count {
+    transition: 0.5s;
+    color: rgb(228, 228, 228, 0.8);
+}

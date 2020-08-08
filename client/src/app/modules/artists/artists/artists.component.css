@@ -1,0 +1,25 @@
+*{
+    color:white;
+}
+
+.col-md-6 > p {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.artist-avatar {
+    margin-right: 10px;
+    clip-path: circle(32px at center);
+}
+
+.artist {
+    font-size: 16px;
+    margin-left: 120px;
+}
+
+.artist> a:hover{
+    color:white !important;
+}

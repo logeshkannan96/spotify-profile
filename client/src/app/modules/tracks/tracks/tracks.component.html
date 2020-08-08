@@ -1,0 +1,31 @@
+<div class="container">
+    <header class="header">
+        <h2 class="tracks-title">Tracks</h2>
+        <div class="tracks-ranges">
+            <button>
+                <span (click)="topTracks()" [class.isClicked]="isTopTracksActive">Top Tracks</span>
+            </button>
+            <button>
+                <span (click)="favourites()" [class.isClicked]="isFavouritesActive">Favourites</span>
+            </button>
+        </div>
+    </header>
+
+    <div *ngFor="let track of tracks" class="tracks">
+        <a [routerLink]="['/track/'+track.id]" class="tracks-inner">
+            <img src="{{track.album.images[1].url}}" alt="" width="52px" class="track-image">
+            <div class="track-details">
+                <p class="track-name">{{track.name}}</p>
+                <p class="additional-details">
+                    <span class="duration">{{calculateDuration(track.duration_ms)}}</span>
+                    &nbsp;&middot;&nbsp;&nbsp;
+                    <span *ngFor="let artist of track.album.artists; let isLast = last">
+                        {{artist.name}}{{isLast ? '' : ', '}}
+                    </span>
+                    &nbsp;&middot;&nbsp;&nbsp;
+                    <span>{{track.album.name}}</span>
+                </p>
+            </div>
+        </a>
+    </div>
+</div>
